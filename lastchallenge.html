@@ -3,35 +3,69 @@
 <html>
 	<head>
 		<style>
-			div.center {
-				border: 5px solid orange;
-				background color: solid white;
-				position: absolute;
-				margin: auto;
-				background-size: contain;
+			#wrapper {
+				min-width: 300px;
+				overflow:scroll;
 			}
 			
-			div.right {
-				background color: white;
-				border: 5px solid white;
-				color: black;
-				float: right;
-				right: 200px;
+			.content {
+				width:100px;
 			}
+			
+			html {
+				min-width: 550px;
+				position: relative;
+			}
+			a: link {
+				color: #F52887;
+			}
+			
+			a: visted {
+				background-color: #800080;	
+			}
+			
+			a: hover {
+				color: #ff0000;
+			}
+	
+			div.center {
+				box-shadow: 10px 10px 10px grey;
+				overflow: hidden;
+				border: 5px solid orange;
+				position:relative;
+				background:white;
+				width:100%;
+				min-width:315px;
+			}
+
+			div.right {
+				overflow: hidden;
+				background color: white;
+				border: 5px solid red;
+				position:absolute;
+				top:0px;
+				right:0px;
+				height:50px;
+				width:100px;
+			}
+			
 			
 			div.left {
+				overflow: hidden;
 				background-color: white;
 				border: 5px solid yellow;
-				float: center;
-				background-size: contain;
-				float: left;
-				left: 200px;
+				position:absolute;
+				top:0px;
+				left:0px;
+				height:50px;
+				width:100px;
 			}
 			body {
+				padding: 30px;
 				background-image: url('IG-Background.png');
 				background-position: center;
-				background-repeat: no-repeat;
 				background-size: cover;
+				background-repeat: no-repeat;
 			}
 			
 			ul {
@@ -72,7 +106,8 @@
 			<h2>Subheading 2!</h2>
 				<p>
 					Nam ut dictum erat, vitae feugiat lectus. Donec aliquet imperdiet tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum sollicitudin massa at quam auctor, ut egestas lectus convallis.
-				</p>			
+				</p>
+			<a href="https://www.instagram.com/">Instagram</a>
 		</div class="center">
 		
 		<div class = "right">
@@ -86,7 +121,7 @@
 		</div class="right">
 		
 		<div class = "left">
-			<img class="resize" src= "InstagramSymbol.png"  alt = "IG logo">
+			<img class= "resize" src= "IG-Logo.webp"  alt = "IG logo">
 		</div>
 	</body>
 </html>
